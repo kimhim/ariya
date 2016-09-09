@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -36,6 +35,12 @@ Route::group(['middleware' => ['web']], function () {
     {
     	return view('tinymce');
     });
+    Route::get('Tourism',['as'=>'tourism','middleware'=>['web'],function(){
+    	return view('frontend.tourism');
+    }]);
+    Route::get('Product-Detail',['as'=>'detail','middleware'=>['web'],function(){
+    	return view('frontend.detail');
+    }]);
 });
 
 Route::get('setlang/{lang}', function($lang)
@@ -49,12 +54,13 @@ Route::get('autocomplete', function()
     return View::make('jquery-ui');
 });
 
-Route::get('admin',function(){
-	return view('administration.login');
-});
 
-//Admin rout
-Route::group(array('prefix' => 'user'), function () {
-    Route::any('', 'FePageController@getProductbyCategory');
-    Route::any('/productbycategories/{cateID}/{id}', 'FePageController@getProductbyCategory');
-} );
+//Admin routes
+Route::any('admin',['as'=>'admin','middleware'=>['web'],'uses'=>'UserController@showlogin']);
+
+Route::any('admin/dashboard',['as'=>'dashboard','middleware'=>['web'],function(){
+	return view('administration.index');
+}]);
+
+Route::any('admin/login', ['as'=>'dologin','middleware'=>['web'],'uses'=>'UserController@dologin']);
+

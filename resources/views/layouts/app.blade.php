@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gallery</title>
+    <title>
+    @yield('title')
+    </title>
 
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -49,18 +51,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Ariya</a>
+          <a class="navbar-brand" href="{{URL::to('/')}}">Ariya</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-2">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right top-main-menu">
             <li><a href="{{URL::to('/')}}">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">Term and Condition</a></li>
             <li><a href="{{route('photo_gallery')}}">Photo Gallery</a></li>
             <li><a href="http://www.cambo-read.ga" target="_blnak">News</a></li>
+            <li><a href="{{route('tourism')}}">Tourism</a></li>
             <li><a href="#">Help</a></li>
             <li>
               <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>

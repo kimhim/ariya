@@ -8,6 +8,7 @@ use App\Http\Requests\UserRegisterValidation;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Auth;
 use Session;
+use DB;
 use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller {
@@ -26,6 +27,33 @@ class UserController extends Controller {
     public function store(UserRegisterValidation $request){
     	return $request->file('gallery');
     	exit;
+    }
+
+    public function showlogin(){
+		return view('administration.login');
+    }
+    public function dologin(){
+    	$username = Input::get ('username');
+    	$password = Input::get('password');
+		$user = DB::table('tbl_user as u')
+		->where('u.user_username','=',$username)
+		->where('u.user_password','=',$password)
+		->get();
+		if($user){
+			Session::put ('is_login',true);
+			Session::put ('user_name',$user[0]->user_first_name.' '.$user[0]->user_last_name);
+			Session::put('message','You are now succesful loged in into our system!');
+			return redirect()->route('dashboard');
+		}else{
+			Session::put ('is_login',false);
+			Session::put ('user_name',NULL);
+			Session::put('message','Please check your username or password,then try it again!');
+			return redirect()->route('admin');
+		}
+    }
+
+    public function islogin(){
+
     }
 
     public function userjson(){

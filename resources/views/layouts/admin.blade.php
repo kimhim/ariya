@@ -28,8 +28,11 @@
 				<a class="navbar-brand" href="index.html">Ariya Admin</a>
 			</div>
 			<div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
-				Last access : 30 May 2014 &nbsp;
-				<a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
+				<?php
+				//Last access : 30 May 2014 &nbsp;
+				//<a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
+				?>
+
 				<a href="{{URL::to('../')}}" class="btn btn-danger square-btn-adjust" target="_blank">
 				<i class="fa fa-globe" aria-hidden="true"></i>&nbsp;View Site</a>
 			</div>
@@ -38,7 +41,7 @@
 		<nav class="navbar-default navbar-side" role="navigation">
 			<div class="sidebar-collapse">
 				<ul class="nav" id="main-menu">
-					<li class="text-center"><img src="assets/img/find_user.png"
+					<li class="text-center"><img src="/assets/img/find_user.png"
 						class="user-image img-responsive" /></li>
 
 
