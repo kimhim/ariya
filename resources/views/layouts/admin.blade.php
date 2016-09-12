@@ -28,7 +28,7 @@
 				<a class="navbar-brand" href="index.html">Ariya Admin</a>
 			</div>
 			<div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
-				@if(Session::has('is_login') && Session::get('is_login'))
+				@if(Session::has('is_login'))
 					<a href="{{route('admin.logout')}}" class="btn btn-danger square-btn-adjust">Logout</a>
 				@endif
 
