@@ -126,9 +126,9 @@
 	<strong>Feature Products &nbsp;</strong>
 	<div class="btn-group hidden-xs hidden-sm">
 		<a href="#" id="grid" class="btn btn-default btn-sm"> <span
-			class="glyphicon glyphicon-th"></span>Grid
+			class="glyphicon glyphicon-th"></span>&nbsp;Grid
 		</a> <a href="#" id="list" class="btn btn-default btn-sm"> <span
-			class="glyphicon glyphicon-th-list"></span>List
+			class="glyphicon glyphicon-th-list"></span>&nbsp;List
 		</a>
 	</div>
 </div>

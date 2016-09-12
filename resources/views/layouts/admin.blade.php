@@ -28,10 +28,9 @@
 				<a class="navbar-brand" href="index.html">Ariya Admin</a>
 			</div>
 			<div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
-				<?php
-				//Last access : 30 May 2014 &nbsp;
-				//<a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
-				?>
+				@if(Session::has('is_login') && Session::get('is_login'))
+					<a href="{{route('admin.logout')}}" class="btn btn-danger square-btn-adjust">Logout</a>
+				@endif
 
 				<a href="{{URL::to('../')}}" class="btn btn-danger square-btn-adjust" target="_blank">
 				<i class="fa fa-globe" aria-hidden="true"></i>&nbsp;View Site</a>

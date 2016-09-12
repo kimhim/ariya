@@ -30,7 +30,9 @@ class UserController extends Controller {
     }
 
     public function showlogin(){
-		return view('administration.login');
+    	if(!($this->islogin())){
+    		return view('administration.login');
+    	}
     }
     public function dologin(){
     	$username = Input::get ('username');
@@ -53,7 +55,7 @@ class UserController extends Controller {
     }
 
     public function islogin(){
-
+    	return Session::get('is_login');
     }
 
     public function userjson(){
@@ -62,6 +64,6 @@ class UserController extends Controller {
 
     public function logout(){
       Session::flush();
-      return redirect('/');
+      return redirect('admin/');
     }
 }

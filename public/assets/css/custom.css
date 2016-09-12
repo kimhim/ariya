@@ -363,6 +363,9 @@ text-align: center;
 font-size: 12px;
 line-height: 1.428571429;
 }
+span.logged_in_message:first-letter{
+	text-transform:uppercase;
+}
 
 /*==============================================
     MEDIA QUERIES     

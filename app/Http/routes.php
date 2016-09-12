@@ -63,4 +63,5 @@ Route::any('admin/dashboard',['as'=>'dashboard','middleware'=>['web'],function()
 }]);
 
 Route::any('admin/login', ['as'=>'dologin','middleware'=>['web'],'uses'=>'UserController@dologin']);
+Route::get('admin/logout',['as'=>'admin.logout','middleware'=>['web'],'uses'=>'UserController@logout']);
 
