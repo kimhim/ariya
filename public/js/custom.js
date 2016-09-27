@@ -9,7 +9,7 @@ $(document).ready(function() {
 	});
 	 
 	 //Homepage Slideshow
-	 $('#homepage_slideshow').carousel({
+	 $('#homepage_slideshow,#Carousel').carousel({
          interval: 5000
 	 });
 	

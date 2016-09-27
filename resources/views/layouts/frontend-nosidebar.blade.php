@@ -86,7 +86,9 @@
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 	<div class="container"  style="padding-top: 60px">
-		@yield('content')
+		<div class="col-xs-12 col-lg-12 col-md-12">
+			@yield('content')
+		</div>
 	</div>
     <!-- JavaScripts -->
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}

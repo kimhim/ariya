@@ -40,16 +40,21 @@
 		<nav class="navbar-default navbar-side" role="navigation">
 			<div class="sidebar-collapse">
 				<ul class="nav" id="main-menu">
-					<li class="text-center"><img src="/assets/img/find_user.png"
+					<li class="text-center">
+					<img src="/assets/img/find_user.png"
 						class="user-image img-responsive" /></li>
-
-
-					<li><a class="active-menu" href="index.html"><i
-							class="fa fa-dashboard fa-3x"></i> Dashboard</a></li>
-					<li><a href="ui.html"><i class="fa fa-desktop fa-3x"></i> UI
-							Elements</a></li>
-					<li><a href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i>
-							Tabs & Panels</a></li>
+					<li>
+						<a class="active-menu" href="<?php echo e(route('admin')); ?>"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+					</li>
+					<li>
+						<a href="ui.html"><i class="fa fa-desktop fa-3x"></i>Products Management<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="#">Add/Edit Products</a></li>
+								<li><a href="#">Categories</a></li>
+								<li><a href="#">Second Level Link</a></li>
+						</ul>
+					</li>
+					<li><a href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i></a></li>
 					<li><a href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i>
 							Morris Charts</a></li>
 					<li><a href="table.html"><i class="fa fa-table fa-3x"></i> Table
@@ -80,9 +85,7 @@
 		</nav>
 		<!-- /. NAV SIDE  -->
 		<div id="page-wrapper">
-			<div id="page-inner">
-				<?php echo $__env->yieldContent('content'); ?>
-			</div>
+			<div id="page-inner"><?php echo $__env->yieldContent('content'); ?></div>
 			<!-- /. PAGE INNER  -->
 		</div>
 		<!-- /. PAGE WRAPPER  -->

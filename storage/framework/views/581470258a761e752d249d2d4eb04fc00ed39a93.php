@@ -86,7 +86,20 @@
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 	<div class="container"  style="padding-top: 60px">
-		<?php echo $__env->yieldContent('content'); ?>
+		<div class="col-lg-3 col-md-3">
+			<div class="list-group">
+			  <a href="#" class="list-group-item active">
+			    Cras justo odio
+			  </a>
+			  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+			  <a href="#" class="list-group-item">Morbi leo risus</a>
+			  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+			  <a href="#" class="list-group-item">Vestibulum at eros</a>
+			</div>
+		</div>
+		<div class="col-lg-9 col-md-9">
+			<?php echo $__env->yieldContent('content'); ?>
+		</div>
 	</div>
     <!-- JavaScripts -->
     <?php /* <script src="<?php echo e(elixir('js/app.js')); ?>"></script> */ ?>

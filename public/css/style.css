@@ -27,7 +27,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 1em;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -48,37 +47,6 @@ ol, ul {
 	padding: 0 10px;
 	margin: 0 10px;
 	line-height: 1.5em;
-}
-h1, h2, h3, h4, h5, h6 {
-	text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
-	font-family: 'Lato', Georgia, Helvetica, Tahoma;
-	margin: 10px 0;
-	font-weight: normal;
-}
-h1 {
-	font-size: 1.875em;
-}
-h2 {
-	font-size: 1.6em;
-	line-height: 1em;
-}
-h3 {
-	font-size: 1.25em;
-}
-h4 {
-	font-size: 1.125em;
-}
-h5 {
-	font-size: 1em;
-}
-h6 {
-	font-size: 0.875em;
-}
-a {
-	text-decoration: none;
-}
-h2 {
-	cursor: pointer;
 }
 code, pre {
 	font-family: Monaco, Menlo, Consolas;
@@ -345,6 +313,13 @@ table {
 
 .rest-left {
 	margin-left: 244px;
+}
+.list-group li h4{
+	font-size:14px;
+	margin:5px;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+	color:#000;
 }
 
 .desc h1,
@@ -670,7 +645,7 @@ Follow me on Twitter @maridlcrmn
 }
 
 
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover
+.list-group-item.active:hover
 {
 	color:#23527c;
 }

@@ -1,3 +1,6 @@
+<?php $__env->startSection('title'); ?>
+	Photo Gallery
+<?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 	<div class="col-lg-12">
 		<div id="freewall" class="free-wall">
@@ -50,4 +53,4 @@
 
 		</script>
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('layouts.frontend-nosidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

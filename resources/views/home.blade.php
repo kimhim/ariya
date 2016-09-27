@@ -1,5 +1,8 @@
-@extends('layouts.app') @section('title') Welcome to our shop
-@endsection @section('content')
+@extends('layouts.frontend')
+@section('title')
+	Welcome to our shop
+@endsection
+@section('content')
 <div class="row">
 	<div class="col-xs-12" id="slider">
 		<!-- Top part of the slider -->
@@ -136,7 +139,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -155,7 +158,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -174,7 +177,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -193,7 +196,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -212,7 +215,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -231,7 +234,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -250,7 +253,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -269,7 +272,7 @@
 	<div class="item col-xs-6 col-sm-6 col-md-4 col-lg-3">
 		<div class="thumbnail thumbnail_product_list">
 			<img class="group list-group-image"
-				src="http://placehold.it/400x250/000/fff" alt="" />
+				src="http://placehold.it/250x160/000/fff" alt="" />
 			<div class="caption">
 				<h4 class="group inner list-group-item-heading">Product title</h4>
 				<p class="group inner list-group-item-text">Product description...</p>
@@ -285,7 +288,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-4 page-nation">
+	<div
+		class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-lg-offset-4 page-nation">
 		<ul class="pagination pagination-large">
 			<li class="disabled"><span>«</span></li>
 			<li class="active"><span>1</span></li>
@@ -303,6 +307,7 @@
 
 		</ul>
 	</div>
+</div>
 
 </div>
 @endsection

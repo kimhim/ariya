@@ -58,9 +58,7 @@ Route::get('autocomplete', function()
 //Admin routes
 Route::any('admin',['as'=>'admin','middleware'=>['web'],'uses'=>'UserController@showlogin']);
 
-Route::any('admin/dashboard',['as'=>'dashboard','middleware'=>['web'],function(){
-	return view('administration.index');
-}]);
+Route::any('admin/dashboard',['as'=>'dashboard','middleware'=>['web'],'uses'=>'UserController@dashboard']);
 
 Route::any('admin/login', ['as'=>'dologin','middleware'=>['web'],'uses'=>'UserController@dologin']);
 Route::get('admin/logout',['as'=>'admin.logout','middleware'=>['web'],'uses'=>'UserController@logout']);

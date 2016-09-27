@@ -1,4 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.frontend-nosidebar')
+@section('title')
+	Photo Gallery
+@endsection
 @section('content')
 	<div class="col-lg-12">
 		<div id="freewall" class="free-wall">

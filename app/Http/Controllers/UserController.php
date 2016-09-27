@@ -34,6 +34,13 @@ class UserController extends Controller {
     		return view('administration.login');
     	}
     }
+    public function dashboard(){
+    	if(!($this->islogin())){
+    		return view('administration.login');
+    	}
+    	return view('administration.index');
+    }
+
     public function dologin(){
     	$username = Input::get ('username');
     	$password = Input::get('password');
