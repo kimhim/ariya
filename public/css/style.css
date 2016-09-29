@@ -35,7 +35,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	background: rgba(231, 231, 231, 0.43);
+	background: #f0f0f0 url(http://2.bp.blogspot.com/-ReAMfeZ3V68/Vs8X1mFeG6I/AAAAAAAADHU/0uaR6bxj7hU/s1600-r/bg2.png) repeat scroll top left;
+    color: #4f4f4f;
+    word-wrap: break-word;
 	line-height: 1.125em;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -43,6 +45,7 @@ body {
 	font-family: 'Lato', Helvetica, Arial, Tahoma;
 	text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
 }
+
 ol, ul {
 	padding: 0 10px;
 	margin: 0 10px;
@@ -318,7 +321,7 @@ table {
 	font-size:14px;
 	margin:5px;
 }
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+.list-group-item.active:focus, .list-group-item.active:hover{
 	color:#000;
 }
 
@@ -542,7 +545,7 @@ Follow me on Twitter @maridlcrmn
      display: block;
  }
  ul.navbar-nav lic a:hover,ul.navbar-nav li.open a:hover,.nav > li > a:hover{
-     color:#337ab7;
+     color:#f1c40f;
  }
  /*ul.top-main-menu li:hover{
      transform: skew(-20deg); 
@@ -692,7 +695,7 @@ Follow me on Twitter @maridlcrmn
 }
 
 .product-info{
-        margin-top: 50px;
+        margin-top:20px;
 }
 
 /*********************************************
@@ -767,8 +770,202 @@ Follow me on Twitter @maridlcrmn
 .service-image-left > center > a > img,.service-image-right > center > a > img{
     max-height: 155px;
 }
+.carousel-control.left, .carousel-control.right {
+        background-image: none;
+    }
 
+    .img-responsive {
+        width: 100%;
+        height: auto;
+    }
 
+    @media ( min-width : 992px ) {
+        .carousel-inner .active.left {
+            left: -25%;
+        }
+        .carousel-inner .next {
+            left: 25%;
+        }
+        .carousel-inner .prev {
+            left: -25%;
+        }
+    }
+
+    @media ( min-width : 768px) and (max-width: 991px ) {
+        .carousel-inner .active.left {
+            left: -33.3%;
+        }
+        .carousel-inner .next {
+            left: 33.3%;
+        }
+        .carousel-inner .prev {
+            left: -33.3%;
+        }
+        .active>div:first-child {
+            display: block;
+        }
+        .active>div:first-child+div {
+            display: block;
+        }
+        .active>div:last-child {
+            display: none;
+        }
+    }
+
+    @media ( max-width : 767px) {
+        .carousel-inner .active.left {
+            left: -100%;
+        }
+        .carousel-inner .next {
+            left: 100%;
+        }
+        .carousel-inner .prev {
+            left: -100%;
+        }
+        .active>div {
+            display: none;
+        }
+        .active>div:first-child{
+            display: block;
+        }
+        .active>div:nth-child(2){
+            display: block;
+        }
+    }
+section {
+    padding: 5% 0;
+}
+
+.alizarin {
+    background: #e74c3c;
+}
+
+.amethyst {
+    background: #9b59b6;
+}
+
+.emerald {
+    background: #2ecc71;
+}
+
+.midnight-blue {
+    background: #2c3e50;
+}
+
+.peter-river {
+    background: #3498db;
+}
+
+.dl {
+    background: #f0f0f0;
+    padding:0;
+    border-radius: 20px;
+    position: relative;
+}
+
+    
+.dl .brand {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dl .discount {
+    min-height: 50px;
+    position: relative;
+    font-size: 40px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 15px 0;
+    color: #f1c40f;
+}
+
+.dl .discount:after {
+    content: " ";
+    
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 20%;
+}
+
+.dl .discount.alizarin:after {
+    border-top: 20px solid #e74c3c;
+}
+
+.dl .discount.peter-river:after {
+    border-top: 20px solid #3498db;
+}
+
+.dl .discount.emerald:after {
+    border-top: 20px solid #2ecc71;
+}
+
+.dl .discount.amethyst:after {
+    border-top: 20px solid #9b59b6;
+}
+
+.dl .discount .type {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: -30px;
+}
+
+.dl .descr {
+    margin-top: 10px;
+    padding: 20px 15px;
+    font-weight: lighter;
+}
+ 
+.dl .ends {
+    padding: 0 15px;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.dl .coupon {
+    min-height: 50px;
+    text-align: center;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 15px;
+}
+
+.dl .coupon a.open-code {
+    color: #16a085;
+}
+
+.dl .coupon .code {
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #f1c40f;
+    background: #f0f0f0;
+}
+p,small,span{
+	font-weight: lighter;
+}
+ul.top-main-menu li a,.navbar-brand{
+	color:#fff;
+}
+ul.navbar-nav lic a:hover, ul.navbar-nav li.open a:hover, .nav > li > a:hover{
+	colro:#f1c40f;
+}
+
+.nav > li > a:focus, .nav > li > a:hover,.nav .open > a, .nav .open > a:focus, .nav .open > a:hover{
+	background-color:transparent;
+}
+.dropdown-menu,.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{
+	background-color:#337ab7;
+}
 
 @media (min-width: 992px) { 
     #tourism_slideshow {padding-right:33.3333%;}

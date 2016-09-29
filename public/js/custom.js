@@ -9,10 +9,13 @@ $(document).ready(function() {
 	});
 	 
 	 //Homepage Slideshow
-	 $('#homepage_slideshow,#Carousel').carousel({
+	 $('#homepage_slideshow').carousel({
          interval: 5000
 	 });
-	
+	 
+	 $('#fruitscarousel').carousel({
+         interval: false
+	 });
 	 $('#carousel-text').html($('#slide-content-0').html());
 	
 	 //Handles the carousel thumbnails
