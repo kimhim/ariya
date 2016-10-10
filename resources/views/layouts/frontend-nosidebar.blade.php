@@ -71,26 +71,25 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-collapse-2">
 				<ul class="nav navbar-nav navbar-right top-main-menu">
-					<li><a href="{{URL::to('/')}}">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="{{route('about')}}">About</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">Crochet <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Hat Crochet</a></li>
-							<li><a href="#">Shose Crochet</a></li>
-							<li><a href="#">Case Crochet</a></li>
-							<li><a href="#">Other</a></li>
+							<li><a href="{{route('category')}}">Hat Crochet</a></li>
+							<li><a href="{{route('category')}}">Shose Crochet</a></li>
+							<li><a href="{{route('category')}}">Case Crochet</a></li>
+							<li><a href="{{route('category')}}">Other</a></li>
 						</ul></li>
-					<li><a href="#">Term and Condition</a></li>
+					<li><a href="{{route('term_condition')}}">Term and Condition</a></li>
 					<li><a href="{{route('photo_gallery')}}">Photo Gallery</a></li>
 					<li><a href="http://www.cambo-read.ga" target="_blnak">News</a></li>
 					<li><a href="{{route('tourism')}}">Tourism</a></li>
-					<li><a href="#">Help</a></li>
+					<li><a href="{{route('help')}}">Help</a></li>
 					<li><a class="btn btn-default btn-outline btn-circle"
 						data-toggle="collapse" href="#nav-collapse2" aria-expanded="false"
 						aria-controls="nav-collapse2">Sign in</a></li>
 				</ul>
-				<div class="collapse nav navbar-nav nav-collapse" id="nav-collapse2">
+				<div class="collapse nav navbar-nav nav-collapse navbar-dark bg-primary" id="nav-collapse2">
 					<form class="navbar-form navbar-right form-inline" role="form">
 						<div class="form-group">
 							<label class="sr-only" for="Email">Email</label> <input
@@ -114,6 +113,7 @@
 	<div class="container" style="padding-top: 60px; background: #fff;">
 		<div class="col-lg-12 col-md-12">@yield('content')</div>
 		<div class="col-lg-12 col-md-12 text-center alert">
+			<br />
 			<a href="www.cambo-read.ga">&copy;Power by KIMHIM</a>
 		</div>
 	</div>

@@ -9,12 +9,16 @@ $(document).ready(function() {
 	});
 	 
 	 //Homepage Slideshow
-	 $('#homepage_slideshow').carousel({
-         interval: 5000
+	 $('#homepage_slideshow,#carousel-example-generic').carousel({
+         interval: 5500
 	 });
 	 
-	 $('#fruitscarousel').carousel({
-         interval: false
+	 $('#related_product,#fruitscarousel').carousel({
+         interval: 5500,
+         
+	 });
+	 $('#related_product').carousel({
+		 interval:true
 	 });
 	 $('#carousel-text').html($('#slide-content-0').html());
 	

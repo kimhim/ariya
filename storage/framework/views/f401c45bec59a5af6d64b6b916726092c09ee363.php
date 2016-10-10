@@ -71,26 +71,25 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-collapse-2">
 				<ul class="nav navbar-nav navbar-right top-main-menu">
-					<li><a href="<?php echo e(URL::to('/')); ?>">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="<?php echo e(route('about')); ?>">About</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown">Crochet <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Hat Crochet</a></li>
-							<li><a href="#">Shose Crochet</a></li>
-							<li><a href="#">Case Crochet</a></li>
-							<li><a href="#">Other</a></li>
+							<li><a href="<?php echo e(route('category')); ?>">Hat Crochet</a></li>
+							<li><a href="<?php echo e(route('category')); ?>">Shose Crochet</a></li>
+							<li><a href="<?php echo e(route('category')); ?>">Case Crochet</a></li>
+							<li><a href="<?php echo e(route('category')); ?>">Other</a></li>
 						</ul></li>
-					<li><a href="#">Term and Condition</a></li>
+					<li><a href="<?php echo e(route('term_condition')); ?>">Term and Condition</a></li>
 					<li><a href="<?php echo e(route('photo_gallery')); ?>">Photo Gallery</a></li>
 					<li><a href="http://www.cambo-read.ga" target="_blnak">News</a></li>
 					<li><a href="<?php echo e(route('tourism')); ?>">Tourism</a></li>
-					<li><a href="#">Help</a></li>
+					<li><a href="<?php echo e(route('help')); ?>">Help</a></li>
 					<li><a class="btn btn-default btn-outline btn-circle"
 						data-toggle="collapse" href="#nav-collapse2" aria-expanded="false"
 						aria-controls="nav-collapse2">Sign in</a></li>
 				</ul>
-				<div class="collapse nav navbar-nav nav-collapse" id="nav-collapse2">
+				<div class="collapse nav navbar-nav nav-collapse navbar-dark bg-primary" id="nav-collapse2">
 					<form class="navbar-form navbar-right form-inline" role="form">
 						<div class="form-group">
 							<label class="sr-only" for="Email">Email</label> <input
@@ -113,6 +112,58 @@
 	<!-- /.navbar -->
 	<div class="container" style="padding-top: 60px; background: #fff;">
 		<div class="col-lg-3 col-md-3">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Latest Products</h3>
+				</div>
+				<div class="panel-body">
+				<!-- ============List each latest item of product -->
+					<div class="item list-group-item latest_item_list" style="margin:0;padding:1px;">
+						<div class="" style="overflow:hidden;">
+							<img class="group list-group-image" src="http://testproject.kh/product/001.jpg" alt="" style="float:left;max-width:95px;">
+							<div class="caption">
+								<span class="group inner list-group-item-heading">New Hat crochet.</span>
+								<p>$12.00</p>
+								<p><a class="btn btn-success btn-xs pull-right" href="http://www.jquery2dotnet.com">Detail</a></p>
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="item list-group-item latest_item_list" style="margin:0;padding:1px;">
+						<div class="" style="overflow:hidden;">
+							<img class="group list-group-image" src="http://testproject.kh/product/001.jpg" alt="" style="float:left;max-width:95px;">
+							<div class="caption">
+								<span class="group inner list-group-item-heading">New Hat crochet.</span>
+								<p>$12.00</p>
+								<p><a class="btn btn-success btn-xs pull-right" href="http://www.jquery2dotnet.com">Detail</a></p>
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="item list-group-item latest_item_list" style="margin:0;padding:1px;">
+						<div class="" style="overflow:hidden;">
+							<img class="group list-group-image" src="http://testproject.kh/product/001.jpg" alt="" style="float:left;max-width:95px;">
+							<div class="caption">
+								<span class="group inner list-group-item-heading">New Hat crochet.</span>
+								<p>$12.00</p>
+								<p><a class="btn btn-success btn-xs pull-right" href="http://www.jquery2dotnet.com">Detail</a></p>
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="item list-group-item latest_item_list" style="margin:0;padding:1px;">
+						<div class="" style="overflow:hidden;">
+							<img class="group list-group-image" src="http://testproject.kh/product/001.jpg" alt="" style="float:left;max-width:95px;">
+							<div class="caption">
+								<span class="group inner list-group-item-heading">New Hat crochet.</span>
+								<p>$12.00</p>
+								<p><a class="btn btn-success btn-xs pull-right" href="http://www.jquery2dotnet.com">Detail</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br />
 			<img src="https://a.thmeythmey.com/advertise/36/thmeythmey013.gif"
 				class="img-responsive" /> <br /> <img
 				src="https://a.thmeythmey.com/advertise/180/banner-2.gif"
@@ -122,10 +173,10 @@
 		</div>
 		<div class="col-lg-9 col-md-9"><?php echo $__env->yieldContent('content'); ?></div>
 		<div class="col-lg-12 col-md-12 text-center alert">
+		<hr>
 			<a href="www.cambo-read.ga">&copy;Power by KIMHIM</a>
 		</div>
 	</div>
-
 	<!-- JavaScripts -->
 	<?php /*
 	<script src="<?php echo e(elixir('js/app.js')); ?>"></script>

@@ -32,6 +32,8 @@ class UserController extends Controller {
     public function showlogin(){
     	if(!($this->islogin())){
     		return view('administration.login');
+    	}else{
+    		return redirect()->route('dashboard');
     	}
     }
     public function dashboard(){

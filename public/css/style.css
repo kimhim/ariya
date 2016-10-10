@@ -506,34 +506,7 @@ table {
 .back-button .back-icon:hover {
 	background: url(../i/back.png) no-repeat bottom center;
 }
-/*
-Code snippet by maridlcrmn for Bootsnipp.com
-Follow me on Twitter @maridlcrmn
-*/
 
-.navbar-brand { position: relative; z-index: 2; }
-
-.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }
-
-.navbar .navbar-collapse { position: relative; }
-.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
-
-.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
-.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
-.navbar.navbar-inverse .nav-collapse { background-color: #222; }
-.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
-.nav-collapse>li { float: right; }
-
-.btn.btn-circle { border-radius: 50px; }
-.btn.btn-outline { background-color: transparent; }
-
-@media screen and (max-width: 767px) {
-    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
-    
-    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
-    .navbar .nav-collapse .navbar-form { margin: 0; }
-    .nav-collapse>li { float: none; }
-}
  .fa-btn {
      margin-right: 6px;
  }
@@ -893,6 +866,31 @@ section {
     left: 20%;
 }
 
+
+.navbar-brand { position: relative; z-index: 2; }
+
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }
+
+.navbar .navbar-collapse { position: relative; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
+    
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+}
+
 .dl .discount.alizarin:after {
     border-top: 20px solid #e74c3c;
 }
@@ -956,7 +954,7 @@ p,small,span{
 ul.top-main-menu li a,.navbar-brand{
 	color:#fff;
 }
-ul.navbar-nav lic a:hover, ul.navbar-nav li.open a:hover, .nav > li > a:hover{
+ul.navbar-nav lic a:hover, ul.navbar-nav li.open a:hover, .nav > li > a:hover,a.navbar-brand:hover{
 	colro:#f1c40f;
 }
 
@@ -965,6 +963,64 @@ ul.navbar-nav lic a:hover, ul.navbar-nav li.open a:hover, .nav > li > a:hover{
 }
 .dropdown-menu,.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover{
 	background-color:#337ab7;
+}
+
+span.icon-bar{
+    background-color:#fff;
+}
+
+span.icon-bar:hover{
+    background-color:#f1c40f;
+}
+.latest_item_list{
+	border:1px solid red;
+}
+.latest_item_list:hover{
+    background-color:green;
+    color:#fff;
+}
+p{
+	margin:0;
+	padding:0;
+	line-height: 2.125em;
+}
+/*.carousel-indicators-numbers {
+    li {
+      text-indent: 0;
+      margin: 0 2px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-radius: 100%;
+      line-height: 30px;
+      color: #fff;
+      background-color: #999;
+      transition: all 0.25s ease;
+      &.active, &:hover {
+        margin: 0 2px;
+        width: 30px;
+        height: 30px;
+        background-color: #337ab7;        
+      }
+    }
+}*/
+.carousel-indicators-numbers li{
+	 text-indent: 0;
+      margin: 0 2px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      border-radius: 100%;
+      line-height: 30px;
+      color: #fff;
+      background-color: #999;
+      transition: all 0.25s ease;
+}
+.carousel-indicators-numbers li.active,.carousel-indicators-numbers li:hover{
+	   margin: 0 2px;
+        width: 30px;
+        height: 30px;
+        background-color: #337ab7;
 }
 
 @media (min-width: 992px) { 

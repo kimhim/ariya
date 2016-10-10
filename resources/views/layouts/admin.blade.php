@@ -54,7 +54,7 @@
 								<li><a href="#">Second Level Link</a></li>
 						</ul>
 					</li>
-					<li><a href="tab-panel.html"><i class="fa fa-qrcode fa-3x"></i></a></li>
+					<li><a href="{{route('admin.localization')}}"><i class="glyphicon glyphicon-globe fa-3x"></i>Localization</a></li>
 					<li><a href="chart.html"><i class="fa fa-bar-chart-o fa-3x"></i>
 							Morris Charts</a></li>
 					<li><a href="table.html"><i class="fa fa-table fa-3x"></i> Table
@@ -102,6 +102,8 @@
 	<script src="{{asset('/assets/js/morris/raphael-2.1.0.min.js')}}"></script>
 	<script src="{{asset('/assets/js/morris/morris.js')}}"></script>
 	<!-- CUSTOM SCRIPTS -->
+	 <script src="//code.angularjs.org/1.4.0/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
 	<script src="{{asset('/assets/js/custom.js')}}"></script>
 
 

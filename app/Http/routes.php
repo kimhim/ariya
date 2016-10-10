@@ -35,12 +35,29 @@ Route::group(['middleware' => ['web']], function () {
     {
     	return view('tinymce');
     });
-    Route::get('Tourism',['as'=>'tourism','middleware'=>['web'],function(){
+    Route::get('Page/Tourism',['as'=>'tourism','middleware'=>['web'],function(){
     	return view('frontend.tourism');
     }]);
-    Route::get('Product-Detail',['as'=>'detail','middleware'=>['web'],function(){
+
+    Route::get('Page/Category',['as'=>'category','middleware'=>['web'],function(){
+    	return view('frontend.category');
+    }]);
+
+    Route::get('Page/Product-Detail',['as'=>'detail','middleware'=>['web'],function(){
     	return view('frontend.detail');
     }]);
+    Route::get('Page/About',['as'=>'about','middleware'=>['web'],function(){
+    	return view('frontend.about');
+    }]);
+
+    Route::get('Page/Help',['as'=>'help','middleware'=>['web'],function(){
+    	return view('frontend.about');
+    }]);
+
+    Route::get('Page/Term_condition',['as'=>'term_condition','middleware'=>['web'],function(){
+    	return view('frontend.about');
+    }]);
+
 });
 
 Route::get('setlang/{lang}', function($lang)
@@ -56,10 +73,16 @@ Route::get('autocomplete', function()
 
 
 //Admin routes
-Route::any('admin',['as'=>'admin','middleware'=>['web'],'uses'=>'UserController@showlogin']);
+Route::any('admin',['as'=>'admin','middleware'=>['web'],'uses'=>'AdminController@showlogin']);
 
-Route::any('admin/dashboard',['as'=>'dashboard','middleware'=>['web'],'uses'=>'UserController@dashboard']);
+Route::any('admin/dashboard',['as'=>'dashboard','middleware'=>['web'],'uses'=>'AdminController@dashboard']);
 
-Route::any('admin/login', ['as'=>'dologin','middleware'=>['web'],'uses'=>'UserController@dologin']);
-Route::get('admin/logout',['as'=>'admin.logout','middleware'=>['web'],'uses'=>'UserController@logout']);
+Route::any('admin/login', ['as'=>'dologin','middleware'=>['web'],'uses'=>'AdminController@dologin']);
+Route::get('admin/logout',['as'=>'admin.logout','middleware'=>['web'],'uses'=>'AdminController@logout']);
+Route::get('admin/Localization',['as'=>'admin.localization','middleware'=>['web'],'uses'=>'AdminController@localization']);
+Route::get('admin/Localization/add',['as'=>'admin.localization.add','middleware'=>['web'],function(){
+	return view('administration.modules.province.add');
+}]);
+Route::post('admin/Localization/save',['as'=>'admin.localization.save','middleware'=>['web'],'uses'=>'AdminController@localization_save']);
+
 

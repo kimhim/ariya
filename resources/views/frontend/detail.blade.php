@@ -6,28 +6,35 @@
 <div class="content-wrapper">
 	<div class="item-container">
 		<div style="padding-top:15px;">
-			<div class="col-md-8">
-				<div class="product col-md-8 service-image-left">
+			<div class="col-md-7">
+				<div class="product col-md-8"><!-- service-image-left -->
 					<center class="detail_main_image">
-						<a href="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png" title="Image Detail">
+						<a href="{{asset('product/fall-crochet-patterns-diy-leaves.jpg')}}" title="Image Detail">
 							<img id="item-display"
-								src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png"
-								alt=""></img>
+								src="{{asset('product/fall-crochet-patterns-diy-leaves.jpg')}}"
+								alt="" class="img-responsive"></img>
 						</a>
 						</center>
 				</div>
 
 				<div class="container service1-items col-sm-4 col-md-4 pull-left">
-					<center>
-						<a id="item-1" class="service1-item"> <img
-							src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png"
-							alt=""></img>
-						</a> <a id="item-2" class="service1-item"> <img
-							src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png"
-							alt=""></img>
-						</a> <a id="item-3" class="service1-item"> <img
-							src="http://www.corsair.com/Media/catalog/product/g/s/gs600_psu_sideview_blue_2.png"
-							alt=""></img>
+					<center class="detail_main_image">
+						<a id="item-1" class="service1-item" href="{{asset('product/timthumb.jpg')}}" title="Image Detail">
+						<img
+							src="{{asset('product/timthumb.jpg')}}"
+							alt="" class="img-responsive"></img>
+						</a>
+						<a id="item-2" class="service1-item" href="{{asset('product/007.jpg')}}" title="Image Detail">
+						<img
+							src="{{asset('product/007.jpg')}}"
+							alt="" class="img-responsive">
+						</img>
+						</a>
+						<a id="item-3" class="service1-item" href="{{asset('product/Crochet-Designs4.jpg')}}" title="Image Detail">
+							<img
+								src="{{asset('product/Crochet-Designs4.jpg')}}"
+								alt="" class="img-responsive">
+							</img>
 						</a>
 					</center>
 				</div>
@@ -108,6 +115,83 @@
 			</div>
 		</div>
 		<hr>
+		<div class="well well-sm">
+			<strong> <span class="glyphicon glyphicon-gift"></span> Related Products &nbsp;
+			</strong>
+		</div>
+		<!--The main div for carousel-->
+		<div class="text-center">
+			<div class="carousel slide" data-ride="carousel" data-type="multi"
+				data-interval="2000" id="related_product">
+
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="#"><img src="{{asset('product/Crochet-Designs4.jpg')}}"
+								class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="#"><img src="{{asset('product/Scrubbie Pics 001.jpg')}}"
+								class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="#"><img src="{{asset('product/Crochet_Flower1.jpg')}}"
+								class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="#"><img
+								src="{{asset('product/crochet-crafts-diy-crochet-designs-simple-crafts-winter-wear-1.jpg')}}"
+								class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="#"><img
+								src="{{asset('product/crochet-pretty-things-by-iaea-on-pinterest-doilies-doily-patterns-84185.jpg')}}"
+								class="img-responsive"></a>
+						</div>
+					</div>
+					<div class="item">
+						<div class="col-md-3 col-sm-4 col-xs-6">
+							<a href="#"><img
+								src="{{asset('product/Mobile Phone Cozy  or Case Crochet Pattern  107.JPG')}}"
+								class="img-responsive"></a>
+						</div>
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#related_product"
+					data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+				<a class="right carousel-control" href="#related_product"
+					data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+			</div>
+		</div>
 	</div>
 </div>
+<script>
+		jQuery(document).ready(function() {
+			jQuery('#related_product[data-type="multi"] .item').each(function(){
+				var next = jQuery(this).next();
+				if (!next.length) {
+					next = jQuery(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo(jQuery(this));
+
+				for (var i=0;i<2;i++) {
+					next=next.next();
+					if (!next.length) {
+						next = jQuery(this).siblings(':first');
+					}
+					next.children(':first-child').clone().appendTo($(this));
+				}
+			});
+		});
+	</script>
 @endsection
